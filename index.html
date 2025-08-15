@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./asset/stylesheet.css">
+    <link rel="stylesheet" href="./asset/fontawesome/css/all.min.css">
+    <script src="./asset/scripts/scripts.js" defer></script>
+    <script src="./asset/scripts/skills.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="./asset/scripts/form.js" defer></script>
+</head>
+<body>
+    <div class="body">
+        <nav>
+            <div class="name">
+                <p>Okeke Chiemerie</p>
+            </div>
+            <div class="menu">
+                <div class="menu-list">
+                    <i class="fas fa-home icon" alt=""></i>
+                    <li>Home</li>
+                </div>
+                <div class="menu-list">
+                    <i class="fas fa-user icon"></i>
+                    <li>About</li>
+                </div>
+                <div class="menu-list">
+                    <i class="fas fa-briefcase icon" alt=""></i>
+                    <li>Portfolio</li>
+                </div>
+                <div class="menu-list">
+                    <i class="fas fa-envelope icon" alt=""></i>
+                    <li>Contact</li>
+                </div>
+            </div>
+            <div class="hamburger"  id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+
+        <!-- Scroll to top button -->
+        <div class="scroll-to-top" id="scrollToTop">
+            <i class="fas fa-chevron-up"></i>
+        </div>
+        <div class="container">
+            <!-- Hero Section -->
+            <section class="hero section" id="home">
+                <section class="intro-container">
+                    <div class="intro-text">
+                        <p class="welcome">Hey There! 👋</p>
+                        <h1>I'm <span>Okeke Chiemerie</span>,<br> a <span>Web Developer</span> who turns ideas into interactive experiences.</h1>
+                        <p class="desc">
+                            I design and build modern, high-performing websites using the latest technologies.
+                            Whether it’s a personal project or a business platform, I deliver responsive and scalable solutions that work beautifully on all devices.
+                        </p>
+                        <div class="buttons">
+                            <button class="btn-main"><i class="far fa-envelope"></i> Send an e-mail</button>
+                            <button class="btn-outline-main"><i class="fas fa-download"></i> Download Resume</button>
+                        </div>
+                    </div>
+                    <div class="intro-image">
+                        <div class="my-image">
+                            <img src="./asset/image/anime_avatar_with_mask.png" alt="">
+                        </div>
+                    </div>
+                </section>
+            </section>
+    
+            <!-- About Section -->
+            <section class="about section" id="about">
+                <div class="about-me">
+                    <h2 class="section-header">About Me</h2>
+                    <p>
+                        I’m Charles Chiemerie, a passionate Web Developer dedicated to creating fast, responsive, and visually appealing websites.
+        
+                        With a strong foundation in HTML, CSS, JavaScript, PHP, and MySQL, I specialize in building functional and scalable solutions for individuals, businesses, and startups.
+        
+                        Over the past year, I’ve worked on various projects ranging from portfolio sites to full-featured web applications, focusing on clean code and great user experiences.
+        
+                        When I’m not coding, I’m exploring new technologies, contributing to open-source projects, and learning ways to improve my craft.
+                    </p>
+                </div>
+                <div class="skill">
+                    <div class="skill-head">
+                        <p>SKILLS <span class="skill line"></span></p>
+                        <h3>MY SKILLS</h3>
+                    </div>
+                    <div class="skill-content"></div>
+                </div>
+                <div class="cta">
+                    <a href="https://x.com/Chiemerie_04" target="_blank" rel="noopener noreferrer"><button class="btn-main"><i class="fas fa-link"></i> Let's Connect</button></a>
+                </div>
+            </section>
+    
+            <!-- Portfolio Section -->
+            <section class="portfolio section" id="portfolio">
+                <h2 class="section-header">Portfolio</h2>
+                <div class="portfolio-container">
+                    <div class="my-work">
+                        <div class="work-image">
+                            <img src="./asset/image/Screenshot 2025-08-13 150133.png" alt="landing page site">
+                            <div class="overlay">
+                                <b>Landing Page</b>
+                                <a href="" class="project-link"><i class="fas fa-external-link-alt"></i> Project Preview</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="my-work">
+                        <div class="work-image">
+                            <img src="./asset/image/Screenshot 2025-08-13 150521.png" alt="landing page site">
+                            <div class="overlay">
+                                <b>Jumia Site</b>
+                                <a href="" class="project-link"><i class="fas fa-external-link-alt"></i> Project Preview</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="my-work">
+                        <div class="work-image">
+                            <img src="./asset/image/Screenshot 2025-08-13 150748.png" alt="landing page site">
+                            <div class="overlay">
+                                <b>Optimal International Limited</b>
+                                <a href="" class="project-link"><i class="fas fa-external-link-alt"></i> Project Preview</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+            <!-- Contact me Section -->
+            <section class="contact-me section" id="contact">
+                <h2 class="section-header">Contact Me</h2>
+                <div class="contact">
+                    <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
+                    <div class="form">
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <label for="e-mail">Email</label>
+                                <input type="email" name="email" id="e-mail" class="input" placeholder="example@gmail.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" name="email" id="name" class="input" placeholder="Enter name for identification" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" name="subject" id="subject" class="input" placeholder="Subject" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea class="input textarea" name="message" id="message" placeholder="Your message" required></textarea>
+                            </div>
+                            <div class="email-button">
+                                <button type="submit" class="btn-main-sm"><i class="fas fa-envelope"></i> Email me</button>
+                            </div>
+                        </form>
+                        <p id="status"></p>
+                    </div>
+                    <div class="social-icons">
+                        <a href="https://x.com/Chiemerie_04" target="_blank" rel="noopener noreferrer" class="s-icon"><div class="fab fa-x-twitter"></div></a>
+                        <a href="https://x.com/Chiemerie_04" target="_blank" rel="noopener noreferrer" class="s-icon"><div class="fab fa-linkedin"></div></a>
+                        <a href="mailto:charleschiemerie2004@gmail.com" target="_blank" rel="noopener noreferrer" class="s-icon"><div class="fas fa-envelope"></div></a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+</html>
