@@ -124,7 +124,7 @@ body{
 }
 
 .body {
-    overflow: auto;
+    overflow-y: auto;
     height: 100vh;
     scroll-behavior: smooth;
 }

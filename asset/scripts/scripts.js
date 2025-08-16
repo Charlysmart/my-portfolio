@@ -16,6 +16,7 @@ menu.addEventListener('click', (e) => {
                 });
             } else {
                 menu.classList.remove('show');
+                body.classList.remove('no-scroll');
                 body.scrollBy({
                     top: section.getBoundingClientRect().top - 100,
                     behavior: 'smooth'
